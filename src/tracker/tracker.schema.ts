@@ -1,16 +1,17 @@
-import *  as mongoose from 'mongoose'
-import uuid from 'uuid/v4';
+import * as mongoose from 'mongoose';
+import { v4 } from 'uuid';
 
-export const TrackerSchema = new mongoose.Schema({
+export const TrackerSchema = new mongoose.Schema(
+  {
     id: {
-        type: String,
-        default: uuid.v4
+      type: String,
+      default: v4,
     },
-    url: String
-},
-    {
-        timestamps: {
-            createdAt: 'time'
-        }
-    }
+    url: String,
+  },
+  {
+    timestamps: {
+      createdAt: 'time',
+    },
+  },
 );
