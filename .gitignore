@@ -1,6 +1,10 @@
 # compiled output
 /dist
 /node_modules
+/screenshots
+/metrics
+/finale
+/trace
 
 # Logs
 logs
